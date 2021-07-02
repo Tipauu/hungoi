@@ -14,8 +14,8 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: ' Chồ Các Bạn Trong Xóm Nhà Lá Nhá...hihi ',
-        text: ' Các Bạn Có Rãnh Thì Bấm Oke Nhớ ',
+        title: ' Chào Anh Người Iu Của Châm Nhớ ',
+        text: ' Anh Đang Rãnh Thì Bấm Oke Nè ',
         imageUrl: '',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Định Nói Gì Thì Nhắn Tin Mình hihi ";
+    var text = " Anh Chỉ Yêu Mình Châm Hoiiiiii ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,11 +96,11 @@ $('#yes').click(function() {
     var audio = new Audio('../sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Thứ 7 làm kèo trà chanh được không mụa ngườiiii ',
+        title: ' Anh Có Thương Châm Hem ',
         html: true,
         width: 900,
         padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='có điều gì thì cứ nói vào đây nhé'>",
+        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='có điều gì thì cứ nói vào đây anh nhé'>",
         background: '#fff url("../img/iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
@@ -109,23 +109,23 @@ $('#yes').click(function() {
               no-repeat
             `,
         showCancelButton: true,
-        cancelButtonText: "Mình Bận Lắm,,,hic",
+        cancelButtonText: "Anh Không Thương",
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: ' Ô Cơ Lun, Hẹn Thứ 7 '
+        confirmButtonText: ' Có Nè '
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Okiiiii lun ',
                 background: '#fff url("../img/iput-bg.jpg")',
-                title: ' Không Được Xu Cà Na Đâu Nhớ:))',
-                text: "Cần Gì Liên Hẹ Mình Nhé, Cứ Bấm Oke Là Được ",
+                title: ' Không Được Bỏ Châm Mình Đâu Nhớ:))',
+                text: "Nhớ Em Thì Nhắn Cho Em Nhé ",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = 'https://www.facebook.com/tipauu.16.09/';
+                    window.location = 'https://www.facebook.com/trams.thuy.3';
                   }
             })
         }
